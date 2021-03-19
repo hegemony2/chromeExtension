@@ -1,0 +1,36 @@
+{
+	"name": "Content Aggregator",
+	"version": "1.0",
+	"description": "Aggregates content you find on the web.",
+	"content_scripts": [
+		{
+			"matches": [
+				"<all_urls>"
+			],
+			"js": [
+				"content.js",
+				"jquery-3.6.0.min.js"
+			]
+		}
+	],
+	"background": {
+		"scripts": [
+			"background.js"
+		]
+	},
+	"manifest_version": 2,
+	"icons": {
+		"16": "icon-16.png",
+		"48": "icon-48.png",
+		"128": "icon-128.png"
+	},
+	"browser_action": {
+		"default_icon": "icon-16.png"
+	},
+	"permissions": [
+		"tabs",
+		"contextMenus",
+		"https://*/*",
+		"http://*/*"
+	]
+}
