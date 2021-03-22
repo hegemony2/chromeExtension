@@ -20,8 +20,8 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 			pageUrl:request.pageUrl,
 			frameUrl:request.frameUrl,
 			selectionText:request.selectionText,
-//			category:request.category
-			category:"123"
+			category:request.category
+//			category:"123"
 		}; //Array 
 
 //	var data = $.toJSON(formData);
